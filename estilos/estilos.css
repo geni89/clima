@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    background-color: rgb(20, 59, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.contenedor-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.contenedor-informacion{
+    background-color: white;
+    width: 60rem;
+    height: 30rem;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-areas: 
+    "info clima"
+    "bandera clima";
+}
+.info{
+    font-size: 3rem;
+    /*
+    background-color: red;
+    */
+    grid-area: info;
+    width: 30rem;
+    margin-left: 1rem;
+}
+/*Quitar estilo feo a las listas*/
+li{
+    list-style: none;
+}
+#bandera{
+    width: 30rem;
+    /*
+    background-color: yellow;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+    margin-left: 1rem;
+}
+#bandera > img{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+.clima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*
+    background-color: blue;
+    */
+    grid-area: clima;
+    width: 30rem;
+}
+.temptext{
+    font-size: 5rem;
+}
+#temp{
+    font-size: 10rem;
+}
+
+/*la madre esa del buscador*/
+#nombreBuscar{
+    width: 30rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+button{
+    width: 9rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+/*prueba miku*/
+model-viewer{
+    display: block;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}

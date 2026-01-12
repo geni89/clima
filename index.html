@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="contenedor-principal">
+    <div class="buscador">
+        <input type="text" id="nombreBuscar" placeholder="Ingresa la ciudad...">
+        <button onclick="datosPais()">Buscar</button>
+    </div>
+    <br>
+    <br>
+    <div class="contenedor-informacion">
+        <div class="info">
+            <ul>
+                <li>Ciudad: <span id="ciudad">default</span></li>
+                <li>Pais: <span id="pais">default</span></li>
+                <li>Latitud: <span id="latitud">deafult</span></li>
+                <li>Longitud: <span id="longitud">deafult</span></li>
+            </ul>
+        </div>
+        <div id="bandera">
+        </div>
+        <div class="clima">
+            <p class="temptext">Temperatura</p>
+            <p id="temp"></p>
+        </div>
+    </div>
+    </div>
+    <div>
+        <model-viewer src="./modelos/shiteyanyo_-_hatsune_miku.glb" auto-rotate rotation-per-second="400deg" shadow-intensity="1"></model-viewer>
+    </div>
+    <audio id="musica" loop>
+        <source src="./musicadefondo/miku.mp3" type="audio/mpeg">
+    </audio>
+    <script src="./scripts/clima.js"></script>
+</body>
+</html>
